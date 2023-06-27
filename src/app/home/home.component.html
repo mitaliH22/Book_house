@@ -1,0 +1,18 @@
+<div class="container">
+  <h1 class="text-center fw-bold">{{ title | titlecase }}</h1>
+  <div class="mt-2">
+  <h4 class="text-center">Members of the Club</h4>
+  <ul class="px-1">
+    <li *ngFor="let user of users" class="card p-2 members-list">
+       <div class="member-img">
+      <img src="{{ user.picture.large }}" alt="">
+      </div>
+      <div class="member-details">
+      <h3>{{ user.name.first }}</h3>
+      <p>{{ user.email }}</p>
+      <p>{{ user.location.country }}</p>
+      </div>
+    </li>
+  </ul>
+  </div>
+</div>

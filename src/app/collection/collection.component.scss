@@ -1,0 +1,24 @@
+.custom-collection{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  .title{
+  font-weight: bold;
+}
+.custom-btn{
+    border:2px solid #bbb9b9;
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: all 0.25s ease-in-out;
+    &:hover{
+      background: black;
+      color: white;
+      cursor: pointer;
+      border:2px solid transparent;
+    }
+}
+.collection-card{
+    border-color: #a59e9ebd!important;
+}
+}

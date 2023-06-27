@@ -1,0 +1,13 @@
+<button type="button" (click)="getInfoService1()">Employee 1</button>
+
+<!-- appRedEl is the attribute directive -->
+<ul appRedEl>
+    <li *ngFor = "let info of Einfo1">{{info}}</li>
+</ul>
+
+<button type="button" (click)="getInfoService2()">Employee 2</button>
+
+<ul>
+    <li *ngFor = "let info of Einfo2">{{info}}</li>
+</ul>
+
